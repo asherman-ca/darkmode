@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Nav from './components/Nav'
+import Hydrate from './components/Hydrate'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,8 +20,10 @@ export default function RootLayout({
 			<body
 				className={`flex min-h-screen flex-col items-center between px-24 pb-24 ${inter.className}`}
 			>
-				<Nav />
-				{children}
+				<Hydrate>
+					<Nav />
+					{children}
+				</Hydrate>
 			</body>
 		</html>
 	)
