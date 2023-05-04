@@ -17,14 +17,14 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body
-				className={`flex min-h-screen flex-col items-center between px-24 pb-24 ${inter.className}`}
-			>
-				<Hydrate>
+			<Hydrate>
+				<body
+					className={`flex min-h-screen flex-col items-center between ${inter.className}`}
+				>
 					<Nav />
 					{children}
-				</Hydrate>
-			</body>
+				</body>
+			</Hydrate>
 		</html>
 	)
 }
