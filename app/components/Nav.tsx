@@ -1,6 +1,6 @@
 'use client'
-import React from 'react'
 import useDarkMode from '../hooks/useDarkMode'
+import React, { useState } from 'react'
 
 const Nav = () => {
 	const [darkTheme, setDarkTheme] = useDarkMode()

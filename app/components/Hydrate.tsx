@@ -8,7 +8,7 @@ const Hydrate = ({ children }: { children: ReactNode }) => {
 		setIsHydrated(true)
 	}, [])
 
-	return <>{isHydrated ? <>{children}</> : <div>...Loading</div>}</>
+	return <>{isHydrated ? <>{children}</> : <></>}</>
 }
 
 export default Hydrate
